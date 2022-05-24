@@ -4,10 +4,10 @@ from pyramid.response import Response
 import os
 
 def hello_world(request):
-    name = os.environ.get('NAME')
+    name = os.environ.get('Name')
     if name == None or len(name) == 0:
         name = "world"
-    message = "Hello, " + name + "!\n"
+    message = "Good morning, " + name + "!\n"
     return Response(message)
 
 if __name__ == '__main__':
